@@ -1,3 +1,5 @@
+import { withDoxaWatch } from '@doxa-innovations/watch/next';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'standalone',
@@ -9,4 +11,7 @@ const nextConfig = {
     ],
   },
 };
-export default nextConfig;
+
+// Doxa Watch: source maps for stack traces (browser maps are moved out of the public folder by
+// `doxa-watch postbuild`) and the collector kept out of the server bundle.
+export default withDoxaWatch(nextConfig);
