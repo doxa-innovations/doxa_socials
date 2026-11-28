@@ -17,13 +17,13 @@
     "@aws-sdk/client-s3": "^3.700.0",
     "@aws-sdk/s3-request-presigner": "^3.700.0",
     "@doxa-innovations/watch": "0.1.0",
-    "better-auth": "^1.1.0",
+    "better-auth": "^1.7.28",
     "drizzle-orm": "^0.45.2",
-    "next": "15.5.24",
+    "next": "15.5.29",
     "pg": "8.23.0",
     "qrcode": "^1.5.4",
-    "react": "19.0.1",
-    "react-dom": "19.0.1"
+    "react": "19.0.9",
+    "react-dom": "19.0.9"
   },
   "devDependencies": {
     "@types/node": "^22",
@@ -32,8 +32,11 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "drizzle-kit": "^0.31.10",
-    "postcss": "^8.4.49",
+    "postcss": "^8.5.34",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
+  },
+  "overrides": {
+    "postcss": "^8.5.34"
   }
 }
